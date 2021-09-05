@@ -16,16 +16,8 @@ const createWindow = () =>{
       }
   });
   win.maximize();
-  win.webContents.openDevTools();
-  //win.webContents.
   console.log(urls[0]);
-
   win.loadURL(urls[0]);
-  // win.loadURL(url.format({
-  //     pathname: path.join(__dirname,"index.html"),
-  //     protocol: 'file',
-  //     slashes: true
-  // }));
   win.once('ready-to-show',()=>{
       win.show()
   });
